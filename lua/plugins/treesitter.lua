@@ -8,7 +8,8 @@ return {
                     "json",
                     "markdown",
                     "lua",
-                    "odin"
+                    "odin",
+                    "glsl"
                 },
                 highlight = {
                     enable = true,

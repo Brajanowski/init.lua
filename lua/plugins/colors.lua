@@ -1,4 +1,15 @@
 return {
+    {
+        "Mofiqul/adwaita.nvim",
+        lazy = false,
+        priority = 1000,
+		config = function()
+			vim.g.adwaita_darker = true
+			vim.g.adwaita_disable_cursorline = true
+			vim.g.adwaita_transparent = false
+			vim.cmd.colorscheme("adwaita")
+    	end
+    },
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
@@ -18,7 +29,7 @@ return {
 				end
 			})
 
-			vim.cmd.colorscheme("tokyonight")
+			-- vim.cmd.colorscheme("tokyonight")
 		end
 	}
 }

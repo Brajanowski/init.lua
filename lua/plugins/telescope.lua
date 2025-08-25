@@ -10,6 +10,10 @@ return {
             local ts = require("telescope.builtin")
 
             vim.keymap.set("n", "<leader>sf", ts.find_files, {})
+            vim.keymap.set("n", "<leader>sd", ts.diagnostics, {})
+            vim.keymap.set("n", "<leader>sk", ts.keymaps, {})
+            vim.keymap.set("n", "<leader>sg", ts.live_grep, {})
+            vim.keymap.set("n", "<leader><leader>", ts.buffers, {})
         end
     }
 }
